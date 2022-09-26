@@ -245,6 +245,7 @@ read_args_and_do_stuff()
   export file_name function_name
   for name in "${command_args[@]}"; do # Checks if the args represent valid function names.
     _printer "INFO: Checking if $name is a valid function name:"
+# TODO: Make array from files in ./functions and compare search against them.    
     search_="dummy"
     if [ "$name" = "$search_" ]; then
       _printer "INFO: Function $name is valid!"
